@@ -1,14 +1,16 @@
-/* Load the custom codes in the Desktop version of the editor */
+/* Load the custom codes in the Desktop version of the editor, only for WP >= 6.6 */
 jQuery(document).ready(function($) {
-	loadInternalCustomCodes( $('head') );
-	loadExternalCustomCodes( $('head') );
+	if ( CCJ_codes['wp_version'].localeCompare('6.6', undefined, { numeric: true, sensitivity: 'base' }) < 0 ) {
+		loadInternalCustomCodes( $('head') );
+		loadExternalCustomCodes( $('head') );
+	}
 });
 
 
 
 /* Load the custom codes in the Mobile/Tablet version of the editor */
 jQuery(document).bind('DOMNodeInserted', function(e) {
-	if ( e.target.className !== 'editor-canvas__iframe' ) return; 
+	if ( e.target.className !== 'block-editor-iframe__container' ) return;
 
 	jQuery('iframe').on('load', function() {
 		let head_frm = jQuery('iframe[name=editor-canvas]').contents().find('head');

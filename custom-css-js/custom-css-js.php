@@ -3,7 +3,7 @@
  * Plugin Name: Simple Custom CSS and JS
  * Plugin URI: https://wordpress.org/plugins/custom-css-js/
  * Description: Easily add Custom CSS or JS to your website with an awesome editor.
- * Version: 3.48
+ * Version: 3.49
  * Author: SilkyPress.com
  * Author URI: https://www.silkypress.com
  * License: GPL2
@@ -12,7 +12,7 @@
  * Domain Path: /languages/
  *
  * WC requires at least: 3.0.0
- * WC tested up to: 9.5 
+ * WC tested up to: 9.7 
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -233,6 +233,8 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 		 */
 		function enqueue_block_editor_assets() {
 
+			global $wp_version;
+
 			if ( ! isset( $this->search_tree ) || ! is_array( $this->search_tree ) || count( $this->search_tree ) === 0 ) return;
 
 			// Default values for the CCJ_codes variable.
@@ -241,6 +243,7 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 				'external' => [],
 				'path' => CCJ_UPLOAD_URL . '/',
 				'jquery' => false,
+				'wp_version' => $wp_version, 
 			];
 
 			// Get the jQuery path.
@@ -277,7 +280,7 @@ if ( ! class_exists( 'CustomCSSandJS' ) ) :
 		public function set_constants() {
 			$dir       = wp_upload_dir();
 			$constants = array(
-				'CCJ_VERSION'     => '3.48',
+				'CCJ_VERSION'     => '3.49',
 				'CCJ_UPLOAD_DIR'  => $dir['basedir'] . '/custom-css-js',
 				'CCJ_UPLOAD_URL'  => $dir['baseurl'] . '/custom-css-js',
 				'CCJ_PLUGIN_FILE' => __FILE__,
