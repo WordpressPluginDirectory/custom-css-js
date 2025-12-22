@@ -144,38 +144,38 @@ class CustomCSSandJS_Admin {
 
 			// JS Scripts
 			$scripts = [
-				'ccj-codemirror'		=> 'lib/codemirror.js',
-				'ccj-formatting'		=> 'lib/util/formatting.js',
+				'ccj-codemirror'        => 'lib/codemirror.js',
+				'ccj-formatting'        => 'lib/util/formatting.js',
 
-				'ccj-xml'				=> 'mode/xml/xml.js',
-				'ccj-js'				=> 'mode/javascript/javascript.js',
-				'ccj-css'				=> 'mode/css/css.js',
-				'ccj-htmlmixed'			=> 'mode/htmlmixed/htmlmixed.js',
+				'ccj-xml'               => 'mode/xml/xml.js',
+				'ccj-js'                => 'mode/javascript/javascript.js',
+				'ccj-css'               => 'mode/css/css.js',
+				'ccj-htmlmixed'         => 'mode/htmlmixed/htmlmixed.js',
 
-				'ccj-comment'			=> 'addon/comment/comment.js',
-				'ccj-dialog'			=> 'addon/dialog/dialog.js',
-				'ccj-fullscreen'		=> 'addon/display/fullscreen.js',
-				'ccj-closebrackets'		=> 'addon/edit/closebrackets.js',
-				'ccj-matchbrackets'		=> 'addon/edit/matchbrackets.js',
-				'ccj-matchtags'			=> 'addon/edit/matchtags.js',
-				'ccj-search'			=> 'addon/search/search.js',
-				'ccj-searchcursor'		=> 'addon/search/searchcursor.js',
-				'ccj-active-line'		=> 'addon/selection/active-line.js',
+				'ccj-comment'           => 'addon/comment/comment.js',
+				'ccj-dialog'            => 'addon/dialog/dialog.js',
+				'ccj-fullscreen'        => 'addon/display/fullscreen.js',
+				'ccj-closebrackets'     => 'addon/edit/closebrackets.js',
+				'ccj-matchbrackets'     => 'addon/edit/matchbrackets.js',
+				'ccj-matchtags'	        => 'addon/edit/matchtags.js',
+				'ccj-search'            => 'addon/search/search.js',
+				'ccj-searchcursor'      => 'addon/search/searchcursor.js',
+				'ccj-active-line'       => 'addon/selection/active-line.js',
 
-				'ccj-show-hint'			=> 'addon/hint/show-hint.js',
-				'ccj-javascript-hint'	=> 'addon/hint/javascript-hint.js',
-				'ccj-xml-hint'			=> 'addon/hint/xml-hint.js',
-				'ccj-html-hint'			=> 'addon/hint/html-hint.js',
-				'ccj-css-hint'			=> 'addon/hint/css-hint.js',
-				'ccj-anyword-hint'		=> 'addon/hint/anyword-hint.js',
+				'ccj-show-hint'	        => 'addon/hint/show-hint.js',
+				'ccj-javascript-hint'   => 'addon/hint/javascript-hint.js',
+				'ccj-xml-hint'          => 'addon/hint/xml-hint.js',
+				'ccj-html-hint'	        => 'addon/hint/html-hint.js',
+				'ccj-css-hint'          => 'addon/hint/css-hint.js',
+				'ccj-anyword-hint'      => 'addon/hint/anyword-hint.js',
 
-				'ccj-brace-fold'		=> 'addon/fold/brace-fold.js',
-				'ccj-comment-fold'		=> 'addon/fold/comment-fold.js',
-				'ccj-foldcode'			=> 'addon/fold/foldcode.js',
-				'ccj-foldgutter'		=> 'addon/fold/foldgutter.js',
-				'ccj-indent-fold'		=> 'addon/fold/indent-fold.js',
-				'ccj-markdown-fold'		=> 'addon/fold/markdown-fold.js',
-				'ccj-xml'				=> 'addon/fold/xml-fold.js',
+				'ccj-brace-fold'        => 'addon/fold/brace-fold.js',
+				'ccj-comment-fold'      => 'addon/fold/comment-fold.js',
+				'ccj-foldcode'          => 'addon/fold/foldcode.js',
+				'ccj-foldgutter'        => 'addon/fold/foldgutter.js',
+				'ccj-indent-fold'       => 'addon/fold/indent-fold.js',
+				'ccj-markdown-fold'     => 'addon/fold/markdown-fold.js',
+				'ccj-fold-xml'          => 'addon/fold/xml-fold.js',
 			];
 
 			if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
@@ -503,7 +503,7 @@ class CustomCSSandJS_Admin {
 		}
 
 		$languages = array(
-			'css'  => __( 'CSS Codes', 'custom-cs-js' ),
+			'css'  => __( 'CSS Codes', 'custom-css-js' ),
 			'js'   => __( 'JS Codes', 'custom-css-js' ),
 			'html' => __( 'HTML Codes', 'custom-css-js' ),
 		);
@@ -858,9 +858,9 @@ End of comment */ ',
 		?>
 
 				<div class="code-mirror-buttons">
-				<div class="button-left"><span rel="tipsy" original-title="<?php _e( 'Beautify Code', 'custom-css-js-pro' ); ?>"><button type="button" tabindex="-1" id="ccj-beautifier"><i class="ccj-i-beautifier"></i></button></span></div>
-				<!--div class="button-left"><span rel="tipsy" original-title="<?php _e( 'Editor Settings', 'custom-css-js-pro' ); ?>"><button type="button" tabindex="-1" id="ccj-settings"><i class="ccj-i-settings"></i></button></span></div -->
-				<div class="button-right" id="ccj-fullscreen-button" alt="<?php _e( 'Distraction-free writing mode', 'custom-css-js-pro' ); ?>"><span rel="tipsy" original-title="<?php _e( 'Fullscreen', 'custom-css-js-pro' ); ?>"><button role="presentation" type="button" tabindex="-1"><i class="ccj-i-fullscreen"></i></button></span></div>
+				<div class="button-left"><span rel="tipsy" original-title="<?php _e( 'Beautify Code', 'custom-css-js' ); ?>"><button type="button" tabindex="-1" id="ccj-beautifier"><i class="ccj-i-beautifier"></i></button></span></div>
+				<!--div class="button-left"><span rel="tipsy" original-title="<?php _e( 'Editor Settings', 'custom-css-js' ); ?>"><button type="button" tabindex="-1" id="ccj-settings"><i class="ccj-i-settings"></i></button></span></div -->
+				<div class="button-right" id="ccj-fullscreen-button" alt="<?php _e( 'Distraction-free writing mode', 'custom-css-js' ); ?>"><span rel="tipsy" original-title="<?php _e( 'Fullscreen', 'custom-css-js' ); ?>"><button role="presentation" type="button" tabindex="-1"><i class="ccj-i-fullscreen"></i></button></span></div>
 <input type="hidden" name="fullscreen" id="ccj-fullscreen-hidden" value="false" />
 <!-- div class="button-right" id="ccj-search-button" alt="Search"><button role="presentation" type="button" tabindex="-1"><i class="ccj-i-find"></i></button></div -->
 
@@ -877,9 +877,20 @@ End of comment */ ',
 				if ( 'auto-draft' != $post->post_status ) {
 					echo '<span id="last-edit">';
 					if ( $last_user = get_userdata( get_post_meta( $post->ID, '_edit_last', true ) ) ) {
-						printf( __( 'Last edited by %1$s on %2$s at %3$s', 'custom-css-js-pro' ), esc_html( $last_user->display_name ), mysql2date( get_option( 'date_format' ), $post->post_modified ), mysql2date( get_option( 'time_format' ), $post->post_modified ) );
+						printf(
+							/* translators: 1: display_name of the curren user, 2: date, 3: time. */
+							__( 'Last edited by %1$s on %2$s at %3$s', 'custom-css-js' ),
+							esc_html( $last_user->display_name ),
+							mysql2date( get_option( 'date_format' ), $post->post_modified ),
+							mysql2date( get_option( 'time_format' ), $post->post_modified )
+						);
 					} else {
-						printf( __( 'Last edited on %1$s at %2$s', 'custom-css-js-pro' ), mysql2date( get_option( 'date_format' ), $post->post_modified ), mysql2date( get_option( 'time_format' ), $post->post_modified ) );
+						printf(
+							/* translators: 1: display_name of the curren user, 2: time. */
+							__( 'Last edited on %1$s at %2$s', 'custom-css-js' ),
+							mysql2date( get_option( 'date_format' ), $post->post_modified ),
+							mysql2date( get_option( 'time_format' ), $post->post_modified )
+						);
 					}
 					echo '</span>';
 				}
@@ -1082,7 +1093,7 @@ End of comment */ ',
 
 		if ( is_multisite() && is_super_admin() && is_main_site() ) {
 			$options['multisite'] = array(
-				'title'    => __( 'Apply network wide', 'custom-css-js-pro' ),
+				'title'    => __( 'Apply network wide', 'custom-css-js' ),
 				'type'     => 'checkbox',
 				'default'  => false,
 				'dashicon' => 'admin-multisite',
@@ -1185,7 +1196,7 @@ End of comment */ ',
 
 		if ( is_multisite() && is_super_admin() && is_main_site() ) {
 			$options['multisite'] = array(
-				'title'    => __( 'Apply network wide', 'custom-css-js-pro' ),
+				'title'    => __( 'Apply network wide', 'custom-css-js' ),
 				'type'     => 'checkbox',
 				'default'  => false,
 				'dashicon' => 'admin-multisite',
@@ -1342,7 +1353,13 @@ End of comment */ ',
 		if ( ! file_exists( $dir ) ) :
 			?>
 			 <div class="notice notice-error is-dismissible">
-			 <p><?php printf( __( 'The %s directory could not be created', 'custom-css-js' ), '<b>custom-css-js</b>' ); ?></p>
+			 <p><?php
+					printf(
+						/* translators: %s: folder name. */
+						__( 'The %s directory could not be created', 'custom-css-js' ),
+						'<b>custom-css-js</b>'
+					);
+				?></p>
 			 <p><?php _e( 'Please run the following commands in order to make the directory', 'custom-css-js' ); ?>: <br /><strong>mkdir <?php echo $dir; ?>; </strong><br /><strong>chmod 777 <?php echo $dir; ?>;</strong></p>
 			</div>
 			<?php
@@ -1353,7 +1370,13 @@ endif;
 		if ( ! wp_is_writable( $dir ) ) :
 			?>
 			 <div class="notice notice-error is-dismissible">
-			 <p><?php printf( __( 'The %s directory is not writable, therefore the CSS and JS files cannot be saved.', 'custom-css-js' ), '<b>' . $dir . '</b>' ); ?></p>
+			 <p><?php
+					printf(
+						/* translators: %s: folder name. */
+						__( 'The %s directory is not writable, therefore the CSS and JS files cannot be saved.', 'custom-css-js' ),
+						'<b>' . $dir . '</b>'
+					);
+				?></p>
 			 <p><?php _e( 'Please run the following command to make the directory writable', 'custom-css-js' ); ?>:<br /><strong>chmod 777 <?php echo $dir; ?> </strong></p>
 			</div>
 			<?php
@@ -1391,7 +1414,7 @@ endif;
 			$filename = $_post->ID . '.' . $options['language'];
 
 			if ( $options['linking'] == 'external' ) {
-				$filename .= '?v=' . rand( 1, 10000 );
+				$filename .= '?v=' . wp_rand( 1, 10000 );
 			}
 
 			// Add the code file names to the branches, example: frontend-css-header-external
@@ -1702,7 +1725,7 @@ endif;
 		$screen->add_help_tab(
 			array(
 				'id'      => 'ccj-editor_shortcuts',
-				'title'   => __( 'Editor Shortcuts', 'custom-css-js-pro' ),
+				'title'   => __( 'Editor Shortcuts', 'custom-css-js' ),
 				'content' =>
 							  '<p><table>
             <tr><td><strong>Auto Complete</strong></td><td> <code>Ctrl</code> + <code>Space</code></td></tr>
@@ -1746,10 +1769,10 @@ endif;
 
 		$file_name = $postid . '.' . $options['language'];
 
-		@unlink( CCJ_UPLOAD_DIR . '/' . $file_name );
+		@wp_delete_file( CCJ_UPLOAD_DIR . '/' . $file_name );
 
 		if ( ! empty( $slug ) ) {
-			@unlink( CCJ_UPLOAD_DIR . '/' . $slug . '.' . $options['language'] );
+			@wp_delete_file( CCJ_UPLOAD_DIR . '/' . $slug . '.' . $options['language'] );
 		}
 	}
 
