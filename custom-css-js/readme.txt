@@ -5,7 +5,7 @@ Email: diana@burduja.eu
 Tags: custom CSS, custom JS, site css, add style, customize theme 
 Requires at least: 3.0.1
 Tested up to: 6.9 
-Stable tag: 3.51.3
+Stable tag: 3.52
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires PHP: 5.2.4
@@ -101,6 +101,11 @@ The URL for the linked Codes is built just like the URL for other media (from Me
 4. Add/Edit HTML 
 
 == Changelog ==
+
+= 3.52 =
+* 03/06/2026
+* Fix: don't load block_css.css or block_js.js on the frontend 
+* Add option "Remove comment from externally linked custom codes"
 
 = 3.51.3 =
 * 01/09/2026
