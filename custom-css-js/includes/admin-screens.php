@@ -588,6 +588,10 @@ class CustomCSSandJS_Admin {
 			die();
 		}
 
+		if ( ! ( current_user_can('edit_custom_css') || current_user_can('edit_custom_csss') || current_user_can('edit_others_custom_csss') ) ) {
+			die();
+		}
+
 		$code_id = absint( $_GET['code_id'] );
 
 		$response = 'error';
@@ -1679,6 +1683,10 @@ endif;
 
 		if ( ! wp_verify_nonce( $_POST['ccj_permalink_nonce'], 'ccj-permalink' ) ) {
 			return;
+		}
+
+		if ( ! ( current_user_can('edit_custom_css') || current_user_can('edit_custom_csss') || current_user_can('edit_others_custom_csss') ) ) {
+			die();
 		}
 
 		$code_id   = isset( $_POST['code_id'] ) ? intval( $_POST['code_id'] ) : 0;

@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 3.54.3 =
+* 10/08/2026
+* Fix: check for user capabilities on two AJAX handlers.
+
 = 3.54.2 =
 * 10/04/2026
 * Fix: the external custom codes weren't correctly loaded on themes that don't declare support for HTML5 markup
